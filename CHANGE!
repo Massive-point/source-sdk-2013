@@ -1,0 +1,7 @@
+Были изменены и добавлены следующие файлы в силу попытки добавить Nightvision(by City-17-Episode-One-Source-2013: https://github.com/hitmen047/City-17-Episode-One-Source-2013.git):
+  sp\src\game\client\view_scene.cpp
+  sp\src\materialsystem\client\stdshaders\game_shader_dx9_base.vpc
+  sp\src\materialsystem\client\stdshaders\nightvision.cpp
+  sp\src\materialsystem\client\stdshaders\nightvision_ps2x.fxc
+  sp\src\materialsystem\client\stdshaders\screenspace_simple_vs20.fxc
+  sp\src\materialsystem\client\stdshaders\stdshader_dx9_20b.txt
