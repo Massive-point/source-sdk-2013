@@ -153,3 +153,35 @@ void UpdateFullScreenDepthTexture( void )
 		pMaterial->DecrementReferenceCount();
 	}
 }
+
+//-----------------------------------------------------------------------------
+// NightVision
+//-----------------------------------------------------------------------------
+static void NightVision_f ( void )
+{
+	C_BasePlayer *pPlayer = C_BasePlayer::GetLocalPlayer(); //get the local player 
+	
+	const Vector *vOrigin = &pPlayer->GetAbsOrigin(); //get the local players origin
+
+	static bool bDisplayed; //static bool
+
+		if ( bDisplayed )
+		{
+			view->SetScreenOverlayMaterial( null ); //set screenoverlay to nothing
+			CLocalPlayerFilter filter;
+			pPlayer->EmitSound(filter, 0, "YfIsYf.NightVisionOff", vOrigin); //and play sound
+		}
+		else
+		{
+			IMaterial *pMaterial = materials->FindMaterial( "NightVision", TEXTURE_GROUP_OTHER, true); //set pMaterial to our texture
+			view->SetScreenOverlayMaterial( pMaterial ); //and overlay it on the screen
+			CLocalPlayerFilter filter;
+			pPlayer->EmitSound(filter, 0, "YfIsYf.NightVisionOn", vOrigin); //and play a sound
+		}
+
+		bDisplayed = !bDisplayed; // flip flop the bool
+	
+}
+
+//night vision console command
+static ConCommand r_nightvision( "r_nightvision", NightVision_f ); // console command to trigger the function, bind it by typing bind n r_nightvision.
