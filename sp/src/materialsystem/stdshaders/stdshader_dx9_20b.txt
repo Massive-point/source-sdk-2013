@@ -6,11 +6,27 @@
 //	    _ps20b.vcs
 //	    _vs20.vcs
 //
-
 example_model_ps20b.fxc
 example_model_vs20.fxc
-
 SDK_Bloom_ps2x.fxc
 SDK_screenspaceeffect_vs20.fxc
-
 SDK_bloomadd_ps2x.fxc
+ae_colorgrade_ps20.fxc
+ae_filmgrain_ps20.fxc
+ae_lensflare_ps2x.fxc
+ae_lensflare_ps20.fxc
+ae_outlinex_ps20.fxc
+ae_outliney_ps20.fxc
+ae_screentension_ps20b.fxc
+ae_ssao_ps20b.fxc
+sdk_aftershock_ps2x.fxc
+sdk_aftershock_vs20.fxc
+DrawDepth_ps20.fxc
+pbr_vs20b.fxc
+pbr_ps20b.fxc
+
+light_volumetrics_ps20b.fxc
+light_volumetrics_vs20.fxc
+
+screenspace_simple_vs20.fxc
+nightvision_ps2x.fxc

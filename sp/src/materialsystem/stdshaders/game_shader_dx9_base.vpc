@@ -47,6 +47,15 @@ $Configuration
 
 $Project
 {
+
+	$Folder "fxc"
+	{
+		$File	"pbr_ps30.fxc"
+		$File	"pbr_vs30.fxc"
+		$File	"pbr_ps20b.fxc"
+		$File	"pbr_vs20b.fxc"
+	}
+
 	$Folder	"Source Files"
 	{
 		$File	"BaseVSShader.cpp"
@@ -56,6 +65,36 @@ $Project
 
 		$File	"Bloom.cpp"
 		$File	"screenspace_general.cpp"
+
+		$File	"ssao.cpp"
+		$File	"ssao_combine.cpp"
+		$File	"gaussian_blur_3x3.cpp"
+
+		$File	"pbr_dx9.cpp"
+
+		$File	"ae_colorgrade.cpp"
+		$File	"ae_depthoffield.cpp"
+		$File	"ae_filmgrainshader.cpp"
+		$File	"ae_colorgrade.cpp"
+		$File	"ae_lensflareshader.cpp"
+		$File	"ae_outlinexshader.cpp"
+		$File	"ae_outlineyshader.cpp"
+		$File	"ae_screentension.cpp"
+		$File	"ae_ssao_blurx.cpp"
+		$File	"ae_ssao_blury.cpp"
+		$File	"ae_ssao_combine.cpp"
+		$File	"ae_ssaoshader.cpp"
+		$File	"aftershock.cpp"
+		$File	"aftershock_helper.cpp"
+		$File	"ishaderapiext.cpp"
+		$File	"DrawDepth.cpp"
+
+		$File	"light_volumetrics.cpp"
+
+		$File	"skymask.cpp"
+		$File	"ss_sunrays.cpp"
+
+		$File	"nightvision.cpp"
 	}
 
 	$Folder	"Header Files"
@@ -69,6 +108,16 @@ $Project
 		$File	"shader_constant_register_map.h"
 
 		$File	"example_model_dx9_helper.h"
+
+		$File	"lightmappedgeneric_ps2_3_x.h"
+
+		$File	"pbr_common_ps2_3_x.h"
+
+		$File	"ae_common_ps_fxc.h"
+		$File	"aftershock_helper.h"
+		$File	"interface_typedefs.h"
+		$File	"interface_typedefs_fxc.h"
+		$File	"ishaderapiext.h"
 	}
 
 	$Folder	"Link Libraries" [$WIN32]
