@@ -35,7 +35,7 @@ public:
 		//////////ADD/////////////////////////////////////////////////////////
 			Vector vAttachment, vAng;
 			QAngle angles;
-			GetAttachment( 1, vAttachment, angles );
+			GetAttachment( static_prop, vAttachment, angles );
 
 			AngleVectors( angles, &vAng );
 			vAttachment += vAng;
